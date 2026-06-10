@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from app.schemas.alert_schema import Alert
 
 app = FastAPI()
 
@@ -7,8 +8,8 @@ def health():
     return {"status": "SOAR Backend Running"}
 
 @app.post("/alert")
-def receive_alert(alert: dict):
+def receive_alert(alert: Alert):
     return {
-        "message":"Alert Received",
-        "data":alert
+        "message": "Alert Received",
+        "alert": alert
     }
