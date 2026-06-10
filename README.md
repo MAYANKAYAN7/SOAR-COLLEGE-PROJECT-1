@@ -23,4 +23,8 @@ A Security Orchestration, Automation and Response (SOAR) platform designed to au
 - GitHub Actions
 
 # Author
-Mayank Bundel
+Mayank Bundel [Team Lead]
+Sanika Gadge
+Nandhana PS
+Rajveer Ranjithsingh Rathod
+
