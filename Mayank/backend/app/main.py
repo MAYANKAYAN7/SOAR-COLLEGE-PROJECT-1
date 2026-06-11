@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app.schemas.alert_schema import Alert
+from app.services.normalizer import normalize_alert
 
 app = FastAPI()
 
@@ -9,7 +10,10 @@ def health():
 
 @app.post("/alert")
 def receive_alert(alert: Alert):
+
+    normalized = normalize_alert(alert.model_dump())
+
     return {
-        "message": "Alert Received",
-        "alert": alert
+        "message": "Normalized Alert",
+        "alert": normalized
     }
