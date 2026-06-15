@@ -24,3 +24,17 @@ A Security Orchestration, Automation and Response (SOAR) platform designed to au
 
 # Author
 Mayank Bundel
+
+## Current Progress
+
+### Week 1
+- FastAPI SOAR Listener
+- Alert Schema Validation
+- Alert Normalization
+- IP Validation
+- Timestamp Standardization
+
+### Week 2
+- IOC Extraction
+- AbuseIPDB Threat Enrichment
+- Risk Scoring Engine
