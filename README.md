@@ -38,3 +38,8 @@ Mayank Bundel
 - IOC Extraction
 - AbuseIPDB Threat Enrichment
 - Risk Scoring Engine
+Mayank Bundel [Team Lead]
+Sanika Gadge
+Nandhana PS
+Rajveer Ranjithsingh Rathod
+
