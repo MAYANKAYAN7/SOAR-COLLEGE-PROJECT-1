@@ -6,7 +6,6 @@ from app.services.abuseipdb_service import check_ip_reputation
 from app.services.risk_engine import calculate_risk
 from app.services.enrichment_service import enrich_alert
 
-
 app = FastAPI()
 
 @app.get("/")
