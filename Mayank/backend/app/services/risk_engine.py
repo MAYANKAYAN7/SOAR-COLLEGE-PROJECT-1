@@ -9,4 +9,4 @@ def calculate_risk(score):
     elif score >= 20:
         return "Medium"
 
-    return "Low"
+    return "Critical"
