@@ -7,8 +7,16 @@ from app.services.risk_engine import calculate_risk
 from app.services.enrichment_service import enrich_alert
 from app.playbooks.playbook_engine import execute_playbook
 from app.services.enrichment_service import enrich_alert
+from app.routes.cases import router as case_router
+from app.routes.dashboard import router as dashboard_router
+from app.routes.timeline import router as timeline_router
+
+
 
 app = FastAPI()
+app.include_router(case_router)
+app.include_router(dashboard_router)
+app.include_router(timeline_router)
 
 @app.get("/")
 def health():
