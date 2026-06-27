@@ -1,0 +1,5 @@
+2026-06-27 11:04:18,881 - INFO - Alert received from 8.8.8.8
+2026-06-27 11:04:18,881 - INFO - Executing playbook for Critical alert from 8.8.8.8
+2026-06-27 11:04:18,882 - INFO - Isolating host: SERVER-01
+2026-06-27 11:04:18,882 - INFO - Blocking IP: 8.8.8.8
+2026-06-27 11:04:18,882 - INFO - Updating AWS Security Group for 8.8.8.8
