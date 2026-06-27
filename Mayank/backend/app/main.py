@@ -10,6 +10,7 @@ from app.services.enrichment_service import enrich_alert
 from app.routes.cases import router as case_router
 from app.routes.dashboard import router as dashboard_router
 from app.routes.timeline import router as timeline_router
+from app.routes.auth import router as auth_router
 
 
 
@@ -17,6 +18,7 @@ app = FastAPI()
 app.include_router(case_router)
 app.include_router(dashboard_router)
 app.include_router(timeline_router)
+app.include_router(auth_router)
 
 @app.get("/")
 def health():
