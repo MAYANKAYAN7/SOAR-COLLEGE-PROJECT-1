@@ -38,7 +38,20 @@ Mayank Bundel
 - IOC Extraction
 - AbuseIPDB Threat Enrichment
 - Risk Scoring Engine
-- 
+- Threat Enrichment
+-Playbook integration
+### Week 3
+- Playbook Engine
+- Host Isolation
+- IP Blocking
+- AWS Security Group module
+- Case Management APIs
+- Dashboard APIs
+- Timeline APIs
+- Authentication & RBAC
+- Health API
+- Logging
+- Exception Handling
 Mayank Bundel [Team Lead]
 Sanika Gadge
 Nandhana PS
