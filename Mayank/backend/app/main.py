@@ -29,11 +29,16 @@ app.include_router(auth_router)
 app.include_router(health_router)
 app.add_exception_handler(RequestValidationError, validation_exception_handler)
 app.add_exception_handler(Exception, generic_exception_handler)
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 
 @app.get("/")
-def health():
-    return {"status": "SOAR Backend Running"}
+async def dashboard():
+    return FileResponse("static/dashboard.html")
 
 @app.post("/alert")
 def receive_alert(alert: Alert):
