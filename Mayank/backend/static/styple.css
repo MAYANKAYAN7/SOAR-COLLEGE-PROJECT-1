@@ -1,0 +1,187 @@
+/* General */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0F172A;
+    color:white;
+}
+
+/* Header */
+
+header{
+    background:#1E293B;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    color:#38BDF8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#38BDF8;
+}
+
+/* Dashboard Cards */
+
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    padding:25px;
+}
+
+.card{
+    background:#1E293B;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0px 4px 10px rgba(0,0,0,.3);
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#38BDF8;
+}
+
+.card p{
+    font-size:30px;
+    font-weight:bold;
+}
+
+.safe{
+    color:#22C55E;
+}
+
+/* Sections */
+
+section{
+    background:#1E293B;
+    margin:20px;
+    padding:20px;
+    border-radius:12px;
+}
+
+section h2{
+    margin-bottom:15px;
+    color:#38BDF8;
+}
+
+/* Tables */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#2563EB;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:12px;
+    border-bottom:1px solid #475569;
+    text-align:center;
+}
+
+table tr:hover{
+    background:#334155;
+}
+
+/* Timeline */
+
+.timeline ul{
+    list-style:none;
+}
+
+.timeline li{
+    padding:10px;
+    margin:10px 0;
+    background:#334155;
+    border-left:5px solid #38BDF8;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+    background:#1E293B;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.dashboard{
+    grid-template-columns:1fr;
+}
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:inline-block;
+    margin:10px;
+}
+
+}
+
+.create-alert{
+
+    background:#1E293B;
+    margin:20px;
+    padding:20px;
+    border-radius:12px;
+
+}
+
+.create-alert input{
+
+    width:250px;
+    padding:10px;
+    margin:10px;
+    border:none;
+    border-radius:5px;
+
+}
+
+.create-alert button{
+
+    padding:10px 20px;
+    background:#2563EB;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+
+}
+
+.create-alert button:hover{
+
+    background:#1D4ED8;
+
+}

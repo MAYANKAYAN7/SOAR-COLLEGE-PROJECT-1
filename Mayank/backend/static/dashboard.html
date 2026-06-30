@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SOAR Incident Containment Engine</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>🛡 SOAR Incident Containment Engine</h1>
+
+        <nav>
+
+            <a href="#">Dashboard</a>
+            <a href="#">Alerts</a>
+            <a href="#">Cases</a>
+            <a href="#">Timeline</a>
+            <a href="#">Health</a>
+            <a href="#">Logout</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Dashboard Cards -->
+
+        <section class="dashboard">
+
+            <div class="card">
+
+                <h2>Total Alerts</h2>
+
+                <p id="totalAlerts">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Critical Alerts</h2>
+
+                <p id="criticalAlerts">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Open Cases</h2>
+
+                <p id="openCases">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Resolved Cases</h2>
+
+                <p id="resolvedCases">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Playbooks Executed</h2>
+
+                <p id="playbooksExecuted">0</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>System Status</h2>
+
+                <p id="systemStatus" class="safe">Running</p>
+
+            </div>
+
+        </section>
+
+        <!-- Create Alert -->
+
+        <section class="create-alert">
+
+            <h2>Create Security Alert</h2>
+
+            <form id="alertForm">
+
+                <input
+                    type="text"
+                    id="source_ip"
+                    placeholder="Source IP"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="alert_type"
+                    placeholder="Threat Type"
+                    required
+                >
+
+                <button type="submit">
+
+                    Submit Alert
+
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Alerts -->
+
+        <section class="alerts">
+
+            <h2>Recent Alerts</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Alert ID</th>
+
+                        <th>Source IP</th>
+
+                        <th>Threat</th>
+
+                        <th>Severity</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="alertTable">
+
+                    <tr>
+
+                        <td>1</td>
+
+                        <td>8.8.8.8</td>
+
+                        <td>Malware</td>
+
+                        <td>Critical</td>
+
+                        <td>Contained</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- Cases -->
+
+        <section class="cases">
+
+            <h2>Case Management</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Case ID</th>
+
+                        <th>Title</th>
+
+                        <th>Severity</th>
+
+                        <th>Assigned To</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="caseTable">
+
+                    <tr>
+
+                        <td>1001</td>
+
+                        <td>Brute Force Attack</td>
+
+                        <td>High</td>
+
+                        <td>SOC Analyst</td>
+
+                        <td>Open</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- Timeline -->
+
+        <section class="timeline">
+
+            <h2>Incident Timeline</h2>
+
+            <ul id="timeline">
+
+                <li>10:20 - Alert Received</li>
+
+                <li>10:21 - IOC Extracted</li>
+
+                <li>10:22 - AbuseIPDB Checked</li>
+
+                <li>10:23 - VirusTotal Checked</li>
+
+                <li>10:24 - Risk Calculated</li>
+
+                <li>10:25 - Playbook Executed</li>
+
+                <li>10:26 - Case Created</li>
+
+            </ul>
+
+        </section>
+
+        <!-- Health -->
+
+        <section class="health">
+
+            <h2>Backend Health</h2>
+
+            <p>
+
+                Status :
+
+                <span id="healthStatus" class="safe">
+
+                    Running
+
+                </span>
+
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+
+            SOAR Incident Containment Engine
+
+            <br>
+
+            Backend : FastAPI
+
+            <br>
+
+            Developed by Mayank Bundel
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
