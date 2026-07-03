@@ -52,7 +52,25 @@ Mayank Bundel
 - Health API
 - Logging
 - Exception Handling
-- 
+
+### Week 4 – Tasks Completed
+- Developed the frontend dashboard using HTML, CSS, and JavaScript.
+- Designed a responsive cybersecurity-themed user interface.
+- Created dashboard cards for alerts, cases, playbooks, and system health.
+- Implemented the Security Alert submission form.
+- Developed the Case Management interface.
+- Created the Incident Timeline section.
+- Configured FastAPI to serve static frontend files.
+- Integrated frontend with backend APIs using JavaScript Fetch API.
+- Connected the alert form with the backend alert processing endpoint.
+- Integrated dashboard with Health Monitoring API.
+- Tested backend APIs using Swagger UI.
+- Fixed frontend rendering, CSS, and JavaScript loading issues.
+- Debugged backend–frontend communication.
+- Performed end-to-end functional testing of the application.
+- Updated project documentation and README.
+- Prepared the project for final submission and deployment.
+
 Mayank Bundel [Team Lead]
 Sanika Gadge
 Nandhana PS
