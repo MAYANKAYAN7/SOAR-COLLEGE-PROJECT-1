@@ -113,3 +113,17 @@
 2026-10-28 08:42:29,820 - INFO - Isolating host: SERVER-01
 2026-10-28 08:42:29,821 - INFO - Blocking IP: 7.7.7.7
 2026-10-28 08:42:29,821 - INFO - Updating AWS Security Group for 7.7.7.7
+2026-10-28 09:27:30,194 - INFO - Alert received from 185.220.101.4
+2026-10-28 09:27:32,276 - INFO - Executing playbook for Critical alert from 185.220.101.4
+2026-10-28 09:27:32,276 - INFO - Isolating host: SERVER-01
+2026-10-28 09:27:32,277 - INFO - Blocking IP: 185.220.101.4
+2026-10-28 09:27:32,277 - INFO - Updating AWS Security Group for 185.220.101.4
+2026-10-28 09:37:55,671 - INFO - Alert received from 185.220.101.4
+2026-10-28 09:37:56,250 - ERROR - Enrichment failed for 185.220.101.4: 401 Client Error: Unauthorized for url: https://api.abuseipdb.com/api/v2/check?ipAddress=185.220.101.4&maxAgeInDays=90
+2026-10-28 09:38:07,856 - INFO - Alert received from 185.220.101.4
+2026-10-28 09:38:08,422 - ERROR - Enrichment failed for 185.220.101.4: 401 Client Error: Unauthorized for url: https://api.abuseipdb.com/api/v2/check?ipAddress=185.220.101.4&maxAgeInDays=90
+2026-10-28 09:40:37,494 - INFO - Alert received from 185.220.101.4
+2026-10-28 09:40:39,064 - INFO - Executing playbook for Critical alert from 185.220.101.4
+2026-10-28 09:40:39,064 - INFO - Isolating host: SERVER-01
+2026-10-28 09:40:39,065 - INFO - Blocking IP: 185.220.101.4
+2026-10-28 09:40:39,065 - INFO - Updating AWS Security Group for 185.220.101.4
