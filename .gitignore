@@ -1,5 +1,11 @@
 __pycache__/
 *.pyc
 venv/
+.venv/
 Mayank/backend/venv/
+Mayank/backend/.venv/
 .env
+*.env
+*.log
+soar.log
+Mayank/backend/soar.log
