@@ -72,7 +72,7 @@ Mayank Bundel
 - Prepared the project for final submission and deployment.
 
 Mayank Bundel [Team Lead]
-Sanika Gadge
-Nandhana PS
-Rajveer Ranjithsingh Rathod
+Karan jangir
+Ashwini Sharma (Didi ka Bhaiya)
+Kaustubh Sharma (Didi)
 
